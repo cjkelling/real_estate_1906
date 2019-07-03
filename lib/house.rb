@@ -25,4 +25,8 @@ class House
     @total_area
   end
 
+  def price_per_square_foot
+    area / @price
+  end
+
 end
