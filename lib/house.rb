@@ -26,7 +26,8 @@ class House
   end
 
   def price_per_square_foot
-    area / @price
+    price = @price.gsub(/[$]/, '').to_i
+    area / price
   end
 
 end
